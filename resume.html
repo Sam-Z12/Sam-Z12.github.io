@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Sam Zandstra Resume</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(10, 10, 10, 1);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .section {
+            background-color: rgba(40, 40, 40, 1);
+            color: rgba(255, 255, 255, 1);
+            border-radius: 1rem;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgba(255, 255, 255, .5);
+            width: 90%;
+            padding: 2rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 20px;
+        }
+
+        .nav-list {
+            list-style-type: none;
+            margin: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            overflow: hidden;
+            align-items: center;
+        }
+
+        .nav-list-l {
+            margin-top: 10px;
+            float: left;
+            text-align: center;
+         
+            
+        }
+
+        .nav-list-r {
+            margin-top: 10px;
+            float: right;
+            text-align: center;
+            }
+
+        a {
+            color: rgba(255, 255, 255, 1);
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgba(155, 155, 155, 1);
+        }
+        
+
+        .title {
+            background-color: rgba(40, 40, 40, 1);
+            color: rgba(255, 255, 255, 1);
+            border-bottom-color: rgba(255, 255, 255, .5);
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            height: 75px;
+            width: 100%;
+            display: flexbox;
+            flex-direction: row;
+            padding: 10;
+        
+        }
+        
+        h1 {
+            margin-bottom: 5px;
+        }
+        td {
+            padding-left: 15px;
+        }
+
+        </style>
+</head>
+<body>
+    <div class="title">
+        <ul class="nav-list">
+                <li class="nav-list-l"><h1 style="margin: 0;">Sam Zandstra<h1></li>
+                <li class="nav-list-r">
+                    <ul class="nav-list" style="margin: 0">
+                        <li>
+                            <a href="https://www.linkedin.com/in/sam-zandstra-986719158/">Linkedin</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Sam-Z12">Github</a>
+                        </li>
+                    </ul>   
+                </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h1>OBJECTIVE</h1>
+        <table>
+            <tr>
+                <td>
+                    <p>Chemical engineer looking for an opportunity to pursue interests in a programming/ software career.
+                        Discovered a passion for software development while working on multiple projects. Highly motivated 
+                        to learn and make meaningful contributions working with a team
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h1>EXPERIENCE</h1>
+        <table class="t">
+            <tr>
+                <td>
+                    <h2>Crush Production Supervisor , Cargill: Fargo, ND : Oil Seeds Processing (1/2021-current)</h2>
+                    <ul>
+                        <li>
+                            Lead a team of 10 operators to efficiently manage plant operation including 
+                            shutdowns/startups, and meeting production output targets for multiple commodities. 
+                        </li>
+                        <li>Responsible for working with the team to solve  production issues, organizing/scheduling 
+                            repair work on equipment, and determining new solutions to improve process reliability, safety, and efficiency.  
+                        </li>
+                        <li>
+                            Using an agile mindset to solve and adapt to daily issues caused by equipment failure, product switching, and operator needs.
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <h2>Engineering Co-op, Cargill: Wahpeton, ND - corn Mill (7/2020-12/2020)</h2>
+                    <ul>
+                        <li>
+                            Used linear regression methods to analyze sections of the corn milling process to determine potential actions for optimization. 
+                        </li>
+                    <ul>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <h2>Data Analysis Pipeline Platform</h2>
+                    <ul>
+                        <li>
+                            Developing a data analysis pipeline server/web application aimed at easily creating and deleting analyses by separating 
+                            the pipeline into data source, analysis and decision execution sections each with its own schema. 
+                        </li>
+                        <li>
+                            Built API which supports fundamental http request methods. The API also implements Oauth 2.0 token authentication.
+                        </li>
+                    <ul>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <h2>Machine Learning for Time-series Analysis</h2>
+                    <ul>
+                        <li>
+                            Explored the feasibility of supervised and unsupervised machine learning classification models on categorizing stock price 
+                            movement into buying and selling ranges. 
+                        </li>
+                        <li>
+                            Used a multiple timeframe approach to optimize sensitivity for real-time applications.
+                        </li>
+                    <ul>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <h2>Other Programming Experience</h2>
+                    <ul>
+                        <li>
+                            Experience programming multithreaded asynchronous client/server applications with sockets using IPv4 and TCP protocols in python and C++. 
+                        </li>
+                        <li>
+                            Experience with creating SQL databases, table relationships, and CRUD operations. 
+                        </li>
+                        <li>
+                            Experience with creating web applications using React framework.
+                        </li>
+                    <ul>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+
+    <div class="section">
+        <h1>EDUCATION</h1>
+        <table>
+            <tr>
+                <td>
+                    <h2>B.S of Chemical Engineering</h2>
+                    <p>University of North dakota, Grand Forks: Class of 2020</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
