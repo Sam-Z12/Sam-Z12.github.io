@@ -80,8 +80,16 @@ body {
 .nav-list {
     list-style-type: none;
     margin: 5px;
-    /* overflow: hidden; */
+    overflow: hidden;
+    padding: 5px 0px 5px 25px;
+}
+
+.toggle-button {
     padding: 5px 25px 5px 25px;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
 .nav-list-l {
@@ -93,6 +101,7 @@ body {
 .nav-list-r {
     float: right;
     text-align: center;
+    margin: 0;
     }
 
 a {
