@@ -1,0 +1,79 @@
+
+#theme-toggle {
+    cursor: pointer;
+    background: 0;
+    border: 0;
+    opacity: 0.8;
+    transform: scale(1);
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    padding: .1em;
+}
+
+#theme-toggle::after {
+    content: attr(aria-label);
+    position: fixed;
+    color: white;
+    background: black;
+    width: fit-content;
+    font-size: 1.25em;
+    right: 0;
+    left: 1;
+    top: 95%;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+    border-radius: 1.25em;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top;
+    transition: transform 0ms linear 300ms, opacity 200ms linear;
+}
+
+#theme-toggle:focus, #theme-toggle:hover{
+    opacity: 1;
+    background-color: rgba(150, 150, 150, .2);
+    border-width: 0px;
+}
+
+#theme-toggle:focus-visible::after, #theme-toggle:hover::after{
+    opacity: .8;
+    transform: scale(.7);
+    transition: transform 50ms linear, opacity 50ms linear;
+    
+}
+
+.sun {
+    transition: transform 200ms, fill-opacity 400ms linear, fill 200ms linear;
+    fill: rgba(255, 255, 255, .5);
+    fill-opacity: 0;
+}
+
+.light-theme .sun{
+    fill-opacity: 1;
+    fill: var(--clr-sun);
+}
+
+.moon {
+    fill: var(--clr-sun);
+    transform-origin: center;
+    transition: transform 400ms linear;
+}
+
+.light-theme .moon {
+    transform: rotate(-.75turn);
+    fill: var(--clr-sun);
+}
+
+.rays {
+    fill: var(--clr-rays);
+    transform-origin: center;
+    transition: transform 400ms linear, fill 200ms linear;
+    
+}
+
+.light-theme .rays {
+    
+    transform: rotate(-.25turn);
+    fill: var(--clr-sun);
+}
