@@ -8,7 +8,9 @@
     border-radius: 50%;
     position: relative;
     margin: 0 auto;
-    padding: .1em;
+    padding: 0;
+    height: 55px;
+    width: 55px;
 }
 
 #theme-toggle::after {
@@ -45,6 +47,7 @@
 
 .sun {
     transition: transform 200ms, fill-opacity 400ms linear, fill 200ms linear;
+    transform-origin: center center;
     fill: rgba(255, 255, 255, .5);
     fill-opacity: 0;
 }
@@ -55,19 +58,20 @@
 }
 
 .moon {
-    fill: var(--clr-sun);
-    transform-origin: center;
+    fill: var(--clr-moon);
+    transform-origin: center 52.5%;
     transition: transform 400ms linear;
 }
 
 .light-theme .moon {
     transform: rotate(-.75turn);
     fill: var(--clr-sun);
+    fill-opacity: 0; 
 }
 
 .rays {
     fill: var(--clr-rays);
-    transform-origin: center;
+    transform-origin: 50% 52.5% ;
     transition: transform 400ms linear, fill 200ms linear;
     
 }
