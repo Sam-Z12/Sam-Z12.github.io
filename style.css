@@ -66,6 +66,7 @@ body {
     border-color: var(--clr-section-border);
     width: 90vw;
     height: auto;
+    max-height: none;
     padding: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 20px;
